@@ -13,7 +13,7 @@ $ npm install --save kmh-to-mph
 ## Usage
 
 ```js
-var kmhToMph = require('kmh-to-mph');
+const kmhToMph = require('kmh-to-mph');
 
 kmhToMph(50);
 //=> 31.0685596

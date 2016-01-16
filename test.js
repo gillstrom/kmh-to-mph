@@ -1,10 +1,7 @@
-'use strict';
-var test = require('ava');
-var kmhToMph = require('./');
+import test from 'ava';
+import m from './';
 
-test('kmhToMph', function (t) {
-	t.plan(2);
-
-	t.assert(kmhToMph(1) === 0.621371192);
-	t.assert(kmhToMph(50) === 31.0685596);
+test(t => {
+	t.is(m(1), 0.621371192);
+	t.is(m(50), 31.0685596);
 });
